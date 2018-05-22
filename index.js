@@ -1,5 +1,6 @@
 const PQueue = require('p-queue');
 const aug = require('aug');
+const Boom = require('boom');
 
 const register = (server, options) => {
   const defaultOptions = {
@@ -18,6 +19,9 @@ const register = (server, options) => {
     method: 'GET',
     path: opts.path,
     handler(request, h) {
+      if (opts.key !== false && request.query.token !== opts.key) {
+        throw Boom.unauthorized();
+      }
       return {
         size: queue.size,
         pending: queue.pending

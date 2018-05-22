@@ -1,6 +1,6 @@
 {
   "name": "hapi-pqueue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A basic queue decoration for hapi servers",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "aug": "^2.0.0",
+    "boom": "^7.2.0",
     "p-queue": "^2.4.2"
   }
 }

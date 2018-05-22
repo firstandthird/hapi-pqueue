@@ -8,7 +8,12 @@ const server = Hapi.server({
 });
 
 const init = async () => {
-  await server.register(require('../'));
+  await server.register({
+    plugin: require('../'),
+    options: {
+      key: 'thekeyissecret'
+    }
+  });
 
   server.route({
     method: 'GET',
