@@ -1,6 +1,6 @@
 {
   "name": "hapi-pqueue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A basic queue decoration for hapi servers",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   ],
   "author": "First + Third",
   "license": "MIT",
+  "repository": "github:firstandthird/hapi-pqueue",
   "devDependencies": {
     "hapi": "^17.5.0"
   },
