@@ -1,0 +1,23 @@
+{
+  "name": "hapi-pqueue",
+  "version": "0.0.0",
+  "description": "A basic queue decoration for hapi servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "testt"
+  },
+  "keywords": [
+    "hapi",
+    "queue",
+    "jobs"
+  ],
+  "author": "First + Third",
+  "license": "MIT",
+  "devDependencies": {
+    "hapi": "^17.5.0"
+  },
+  "dependencies": {
+    "aug": "^2.0.0",
+    "p-queue": "^2.4.2"
+  }
+}
